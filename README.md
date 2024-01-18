@@ -1,5 +1,3 @@
-Golang Torrent Parser
-=====================
 <p></p>
 <p align="center">
   <img src="assets/torinfo.png" />
