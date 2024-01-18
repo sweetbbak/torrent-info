@@ -2,7 +2,6 @@ package gotorrentparser
 
 import (
 	"io"
-	"io/ioutil"
 	"os"
 	"time"
 
@@ -10,7 +9,7 @@ import (
 )
 
 func Parse(reader io.Reader) (*Torrent, error) {
-	data, err := ioutil.ReadAll(reader)
+	data, err := io.ReadAll(reader)
 	if err != nil {
 		return nil, err
 	}
